@@ -25,15 +25,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-
-const getPost = async () => {
-  const response = await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("RESPONSE");
-    }, 4000);
-  });
-  return response;
-};
+import getPost from "@/lib/getPost";
 
 export async function CardPost() {
   const response = await getPost();
